@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>AJAX Challenge</title>
+        <script src="jquery.min.js" type="text/javascript"></script>
+    </head>
+
+    <body>
+        <h1>AJAX Challenge</h1>
+        <button id="myBtn">Get Tweets</button>
+
+        <script>
+            document.querySelector("#myBtn").addEventListener("click", getTweets);
+
+            function getTweets(){
+                // console.log("working");  //First write simple code to test if everything's working
+
+                let request = new XMLHttpRequest();
+
+                request.open("GET", "http://localhost:3000/tweets.json", true); // True: asynchronous
+
+                request.onerror = () => {
+                    console.log("Connection error!");
+                }
+
+                request.onload = () => {
+                    if (request.status >= 200 && request.status < 300){
+                        let parsedResponse = JSON.parse(request.responseText);
+                        for(let i = 0; i < parsedResponse.length; i++){
+                            console.log(parsedResponse[i].message);
+                        }
+
+                    } else {
+                        console.log("Error", request);
+                    }
+                }
+                request.send();
+            }
+        </script>
+    </body>
+</html>
