@@ -92,6 +92,7 @@
     
             
             // 4. Return an array: Sort movies by watchlist counts (from most watched to least watched)
+            // Read 'compareFunction(a, b)' https://devdocs.io/javascript/global_objects/array/sort to see how to sort movies in correct order
             let moviesSorted = Object.keys(moviesCount).sort(
                 function(a,b){
                 if (moviesCount[b] > moviesCount[a]) {
