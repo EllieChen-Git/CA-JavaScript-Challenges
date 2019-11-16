@@ -11,7 +11,7 @@
 |        14/11/2019            |       Most-Watched-Movies.js    |                                  |
 |        14/11/2019            |       Atomic-Blonde.js          |                                  |
 |        15/11/2019            |       Capitalise-the-Front.js   |                                  |
-|        15/11/2019            |                             |                                  |
+|        15/11/2019            |       JS-Object                 |                                  |
 
 
 - template.js: template file
