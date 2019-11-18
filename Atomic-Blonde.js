@@ -12,7 +12,7 @@ const atomicBlonde = (num) => {
 	let digits = num.toString().split('').map(Number);
 	let sum = digits.reduce((a,b) => a+b);
 	let product = digits.reduce((a,b) => a*b);
-	return (sum === product)? true:false
+	return sum === product
 }
 
 console.log(atomicBlonde(123))
