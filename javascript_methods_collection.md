@@ -20,6 +20,23 @@ __how to convert a number to its corresponding letter__
 
 ```
 
+__.parseFloat__: parses an argument and returns a floating point number.
+__.toFixed()__: formats a number using fixed-point notation.
+
+```javascript
+function financial(x) {
+  return Number.parseFloat(x).toFixed(2);
+}
+
+console.log(financial(123.456));
+// expected output: "123.46"
+
+console.log(financial(0.004));
+// expected output: "0.00"
+
+console.log(financial('1.23e+5'));
+// expected output: "123000.00"
+```
 
 ---
 ### String
@@ -78,6 +95,51 @@ console.log(str.substring(2));
 // expected output: "zilla"
 ```
 
+__.slice__: extracts a section of a string and returns it as a new string, without modifying the original string.
+- ##### beginIndex
+The zero-based index at which to begin extraction. If negative, it is treated as strLength + beginIndex where strLength is the length of the string (for example, if beginIndex is -3 it is treated as strLength - 3). If beginIndex is greater than or equal to the length of the string, slice() returns an empty string.
+- ##### endIndex(Optional): 
+The zero-based index before which to end extraction. The character at this index will not be included. If endIndex is omitted, slice() extracts to the end of the string. If negative, it is treated as strLength + endIndex where strLength is the length of the string (for example, if endIndex is -3 it is treated as strLength - 3).
+
+
+```javascript
+//when index is 0 or positive, .slice & .substring act the same!
+> let a = "doggo"
+> a.slice(0);
+'doggo'
+> a.substring(0);
+'doggo'
+> a.slice(1);
+'oggo'
+> a.substring(1);
+'oggo'
+> a.slice(2);
+'ggo'
+> a.substring(2);
+'ggo'
+
+//when index is negative, .slice & .substring act differently!
+> a.slice(-1);
+'o'
+> a.slice(-2);
+'go'
+> a.substring(-1);
+'doggo'
+> a.substring(-2);
+'doggo'
+
+//.slice & .substring can be used to add a character inside a string
+let append0 = function(y){
+    if(y[3] === " "){
+        let yWith0 = y.slice(0, 3) + "0" + y.slice(3);
+        // let yWith0 = y.substring(0, 3) + "0" + y.substring(3);  
+        // can achieve the same effect with .substring
+        return yWith0;
+    } 
+}
+
+append0("7:5 AM"); // return '7:50 AM'
+````
 __How to capitalise a word__
 
 ```javascript
@@ -304,6 +366,31 @@ Number.isNaN('37');
 Number.isNaN('37.37');
 Number.isNaN('');
 Number.isNaN(' ');
+```
+---
+
+### JSON
+
+Refer here: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON
+
+##### JSON.parse()
+Parse a string as JSON, optionally transform the produced value and its properties, and return the value. Any violations of the JSON syntax, including those pertaining to the differences between JavaScript and JSON, cause a SyntaxError to be thrown. The reviver option allows for interpreting what the replacer has used to stand in for other datatypes.
+
+##### JSON.stringify()
+Return a JSON string corresponding to the specified value, optionally including only certain properties or replacing property values in a user-defined manner. By default, all instances of undefined is replaced with null, and other unsupported native data types are censored. The replacer option allows for specifying other behavior.
+Specifications
+
+```javascript
+//Turn a JS object into JSON:
+lunch = { food: 'Pork Bun Roll', price: 10 };
+lunchJson = JSON.stringify(lunch);
+//'{"food":"Pork Bun Roll","price":10}'
+
+
+// Turn JSON into a JS object:
+lunchJson = '{"food":"Pork Bun Roll","price":10}';
+lunch = JSON.parse(lunchJson);
+//{ food: 'Pork Bun Roll', price: 10 };
 ```
 
 ---
