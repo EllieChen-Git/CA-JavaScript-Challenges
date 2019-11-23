@@ -17,6 +17,11 @@
 |        19/11/2019            |       Universe-Quiz.js          |        G's JS review session     |
 |        20/11/2019            |       Arguments                 |                                  |
 |        21/11/2019            |       Loops-Return.js           |        G's JS review session     |
+|        18/11/2019            | EHFSC_Mo_Ch_(Prototype-vs-Class)|                                  |
+|        15/11/2019            |       Classes [incomplete]      |            incomplete            |
+|                  |                 |            |
+|                  |                 |            |
+|                  |                 |            |
 
 ---
 ##### Other Files

@@ -2,23 +2,26 @@
 
 
 // Challenge
-    // 1.	Create a Dog class. Each dog should have a name and a location.
+// 1.	Create a Dog class. Each dog should have a name and a location.
 class Dog {
     constructor(name, location){
         this.name = name;
         this.location = location;
     }
-    // 2.	Add a speak method that logs "Woof! my name is {name}"
+// 2.	Add a speak method that logs "Woof! my name is {name}"
     speak(){
         return `Woof! my name is ${this.name}`;
     }
-    // 3.	Add a walk method that accepts two arguments: location (string) and distance (integer)
+// 3.	Add a walk method that accepts two arguments: location (string) and distance (integer)
     walk(location, distance){
         this.location = location;
         this.distance = distance;
     }
+// 4.	Add a display_walks method that console.logs all of the dog's walks
     displayWalks(){
-        
+        this.dogsWalks = [];
+        this.dogsWalks[this.location] = this.distance;
+        console.log(this.dogsWalks);
     }
 }
 let dog1 = new Dog("Hunter", "Cabramatta")
@@ -27,12 +30,13 @@ let dog2 = new Dog("Ruben", "Ashfield")
 // console.log(dog2);
 // console.log(dog1.speak());
 dog1.walk("North Sydney", 15);
-dog2.walk("Burwood", 5);
-console.log(dog1);
-console.log(dog2);
+dog1.walk("Burwood", 5);
+dog1.displayWalks();
+// console.log(dog1);
+// console.log(dog2);
 
 
-// 4.	Add a display_walks method that console.logs all of the dog's walks
+
 // 5.	Add a total_distance method that returns the total distance of all the walks
 // 6.	Research: what's the difference between console.log and return? Make sure you have a solid understanding
 
