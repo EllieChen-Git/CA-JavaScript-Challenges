@@ -1,6 +1,5 @@
 //[Challenge] 1118 Exception Handling, Function Scope & Closures - JSON: https://coderacademyedu.github.io/resources/unit_json.html
 
-
 //***********************************************************************/
 
 // When we send data across the web, it can only be text.

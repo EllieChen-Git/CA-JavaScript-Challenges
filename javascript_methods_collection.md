@@ -66,6 +66,19 @@ __.charAt__:  returns a new string consisting of the character at the index
 
 ```
 
+__.trim()__: removes whitespace from both ends of a string. Whitespace in this context is all the whitespace characters (space, tab, no-break space, etc.) and all the line terminator characters (LF, CR, etc.).
+__.trimEnd()__ / __trimRight()__: removes whitespace from the end of a string.
+__.trimStart()__ / __trimLeft()__: removes whitespace from the beginning of a string.
+
+```javascript
+var greeting = '   Hello world!   ';
+
+console.log(greeting);
+// expected output: "   Hello world!   ";
+
+console.log(greeting.trim());
+// expected output: "Hello world!";
+```
 
 __how to convert a letter to its corresponding number__
 
@@ -83,7 +96,6 @@ __.toUpperCase__: returns the calling string value converted to uppercase (the v
 
 __.toLowerCase__: returns the calling string value converted to lower case.
 
-
 __.substring__: returns the part of the string between the start and end indexes, or to the end of the string.
 ```javascript
 var str = 'Mozilla';
@@ -100,7 +112,6 @@ __.slice__: extracts a section of a string and returns it as a new string, witho
 The zero-based index at which to begin extraction. If negative, it is treated as strLength + beginIndex where strLength is the length of the string (for example, if beginIndex is -3 it is treated as strLength - 3). If beginIndex is greater than or equal to the length of the string, slice() returns an empty string.
 - ##### endIndex(Optional): 
 The zero-based index before which to end extraction. The character at this index will not be included. If endIndex is omitted, slice() extracts to the end of the string. If negative, it is treated as strLength + endIndex where strLength is the length of the string (for example, if endIndex is -3 it is treated as strLength - 3).
-
 
 ```javascript
 //when index is 0 or positive, .slice & .substring act the same!
@@ -139,8 +150,8 @@ let append0 = function(y){
 }
 
 append0("7:5 AM"); // return '7:50 AM'
-````
-__How to capitalise a word__
+```
+##### How to capitalise a word
 
 ```javascript
 let firstChar = i.charAt(0).toUpperCase();
@@ -149,8 +160,25 @@ let rest = i.substring(1).toLowerCase();
 //downcase the remaining character of a word
 //.substring: returns the part of the string between the start index to the end of the string.
 let word = firstChar + rest;
-````
+```
 __.parseInt()__: parses a string argument and returns an integer of the specified radix (the base in mathematical numeral systems).
+
+
+__.match__: retrieves the matches when matching a string against a regular expression.
+
+```javascript
+let Boulevards = [ "Boulevard de la Madeleine", "Boulevard de Magenta", "Boulevard Marguerite-de-Rochechouart", "Boulevard Montmartre", "Boulevard du Montparnasse", "Boulevard la Madeleine"];
+
+let de = Boulevards.filter(i => i.match("de"));
+
+console.log(de);
+
+// expected output:
+// [ 'Boulevard de la Madeleine',
+//   'Boulevard de Magenta',
+//   'Boulevard Marguerite-de-Rochechouart',
+//   'Boulevard la Madeleine' ]
+```
 
 ---
 
@@ -174,9 +202,38 @@ console.log(elements.join('-'));
 // expected output: "Fire-Air-Water"
 
 ```
+__.map__: creates a new array with __the results__ of calling a provided function on __every element__ in the calling array.
 
+```javascript
+const array1 = [1, 4, 9, 16];
 
-__.filter__: creates a new array with all elements that pass the test implemented by the provided function.
+const map1 = array1.map(x => x * 2);
+
+console.log(map1);
+// expected output: Array [2, 8, 18, 32]
+```
+
+__.find__: returns the value of the __first element__ in the array that satisfies the provided testing function. Otherwise undefined is returned.
+```javascript
+const array1 = [5, 12, 8, 130, 44];
+
+const found = array1.find(element => element > 10);
+
+console.log(found);
+// expected output: 12
+```
+
+__.findIndex()__: returns the index of the first element in the array that satisfies the provided testing function. Otherwise, it returns -1, indicating no element passed the test.
+```javascript
+const array1 = [5, 12, 8, 130, 44];
+
+const isLargeNumber = (element) => element > 13;
+
+console.log(array1.findIndex(isLargeNumber));
+// expected output: 3
+```
+
+__.filter__: creates a new array with __all elements that pass the test__ implemented by the provided function.
     array.filter(Boolean) => filter all the "true" elements
     https://devdocs.io/javascript/global_objects/array/filter
 
@@ -204,8 +261,30 @@ console.log(pets.includes('at'));
 
 ```
 
+__.splice()__: changes the contents of an array by removing existing elements and/or adding new elements.
+```javascript
+// Remove 1 element from index 3
+var myFish = ['angel', 'clown', 'drum', 'mandarin', 'sturgeon'];
+var removed = myFish.splice(3, 1);
+// removed is ["mandarin"]
+// myFish is ["angel", "clown", "drum", "sturgeon"] 
+
+// Remove 0 (zero) elements from index 2, and insert "drum"
+var myFish = ['angel', 'clown', 'mandarin', 'sturgeon'];
+var removed = myFish.splice(2, 0, 'drum');
+// myFish is ["angel", "clown", "drum", "mandarin", "sturgeon"] 
+// removed is [], no elements removed
+
+//Remove 2 elements from index 0, and insert "parrot", "anemone" and "blue"
+var myFish = ['angel', 'clown', 'trumpet', 'sturgeon'];
+var removed = myFish.splice(0, 2, 'parrot', 'anemone', 'blue');
+// myFish is ["parrot", "anemone", "blue", "trumpet", "sturgeon"] 
+// removed is ["angel", "clown"]
+```
+
+
 __.sort__: sorts the elements of an array in place and returns the array. 
-- Unable to sort numbers correctly (The default sort order is built upon converting the elements into strings, then comparing their sequences of UTF-16 code units values.). See https://devdocs.io/javascript/global_objects/array/sort for more details.
+- Unable to sort numbers correctly (The default sort order is built upon converting the elements into strings, then comparing their sequences of UTF-16 code units values.). For more details, see https://devdocs.io/javascript/global_objects/array/sort
 
 ```javascript
 const months = ['March', 'Jan', 'Feb', 'Dec'];
@@ -217,12 +296,41 @@ const array1 = [1, 30, 4, 21, 100000];
 array1.sort();
 console.log(array1);
 // expected output: Array [1, 100000, 21, 30, 4]
+```
 
+##### Advanced sorting: .sort(function (a, b) {}) 
+```javascript
+var items = [
+  { name: 'Edward', value: 21 },
+  { name: 'Sharpe', value: 37 },
+  { name: 'And', value: 45 },
+  { name: 'The', value: -12 },
+  { name: 'Magnetic', value: 13 },
+  { name: 'Zeros', value: 37 }
+];
+
+// sort by value
+items.sort(function (a, b) {
+  return a.value - b.value;
+});
+
+// sort by name
+items.sort(function(a, b) {
+  var nameA = a.name.toUpperCase(); // ignore upper and lowercase
+  var nameB = b.name.toUpperCase(); // ignore upper and lowercase
+  if (nameA < nameB) {
+    return -1;
+  }
+  if (nameA > nameB) {
+    return 1;
+  }
+  // names must be equal
+  return 0;
+});
 ```
 
 
 __How to count elements in array (1)__
-
 ```javascript
     let i = 0;
     for (let element of array) {
@@ -230,24 +338,87 @@ __How to count elements in array (1)__
             i++;
         }
     }
-
     console.log(i)
+
+    let count = 0;
+    for(let i = 0; i < array.length; ++i){
+      if(array[i] == true)
+          count++;
+      }
+    console.log(count)
 ```
 
-__How to count elements in array (2)__
-
+__How to count elements in array & save result as an object (2)__
 ```javascript
-let count = 0;
-for(let i = 0; i < array.length; ++i){
-    if(array[i] == true)
-        count++;
-}
+ const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
+
+  //[Solution 1]
+  var countData = data.reduce(function(allData, element) { 
+    if (element in allData) {
+    allData[element]++;
+    }
+    else {
+    allData[element] = 1;
+    }
+    return allData;
+  }, {});
+
+//   console.log(countData);
+
+
+    //[Solution 2]
+      let initialValue = {}
+      let reducer = function(count, element) {
+        if (!count[element]) {
+          count[element] = 1;
+        } else {
+          count[element] = count[element] + 1;
+        }
+        return count;
+      }
+      let result = data.reduce(reducer, initialValue) 
+    //   console.log(result);    
+
+  //[Solution 3]
+      let dataCount = {}, index, instance;                                
+      for (index = 0; index < data.length; index++) {
+          instance = data[index];
+          if (typeof dataCount[instance] === "undefined") {      //first time counting a instance, the datatype of it is 'undefined'
+              dataCount[instance] = 1;                           //so we set the initial count equals to '1' here
+          } else {
+              dataCount[instance]++;
+          }
+      }
+    //   console.log(dataCount);
 ```
 
 __How to add up all elements in array__
 ```javascript
 let sum = array.reduce((a,b) => a+b);
 ```
+
+__.some()__: tests whether at least one element in the array passes the test implemented by the provided function.
+- Note: This method returns false for any condition put on an empty array.
+__.every()__: method tests whether all elements in the array pass the test implemented by the provided function.
+- Note: This method returns true for any condition put on an empty array.
+
+```javascript
+  const peopleTwo = [
+    { name: 'Wes', year: 1988 },
+    { name: 'Kait', year: 1986 },
+    { name: 'Irv', year: 1970 },
+    { name: 'Lux', year: 2015 }
+  ];
+
+  let olderThan19 = peopleTwo.some(i => (2019 - i.year) > 19);
+  console.log(olderThan19)   //true
+    
+  let everyoneOlderThan19 = peopleTwo.every(i => (2019 - i.year) > 19);
+  console.log(everyoneOlderThan19) //false
+```
+
+
+
 
 ---
 

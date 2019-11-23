@@ -19,12 +19,16 @@
 |        21/11/2019            |       Loops-Return.js           |        G's JS review session            |
 |        18/11/2019            | EHFSC_Mo_Ch_(Prototype-vs-Class)|                                         |
 |        15/11/2019            |       Classes [incomplete]      |            incomplete                   |
+|        18/11/2019            |       JSON.js                   | Beast Mode++ to do (Yahoo! weather API) |
 |        18/11/2019            |       JSON.js                   | Beast Mode++ to do <br />(Yahoo! weather API) |
-|                  |                 |            |
-|                  |                 |            |
+|        22/11/2019            |       Array-Challenges.js       |                                         |
+|        20/11/2019            |       Callbacks [incomplete]    |            incomplete                   |
+
+
+
 
 ---
-##### Other Files List
+##### Other Files
 
 - template.js: template file for JavaScript challenges
 - javascript_methods_collection.md: stores all JavaScript backend functions
