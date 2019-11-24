@@ -6,7 +6,7 @@
 ---
 ##### Challenges List
 
-|:star: Canvas Schedule  :star:|     :fire: Challenge :fire:     |   :pencil2: Note :pencil2:              | 
+|:star: Canvas Schedule :star:|     :fire: Challenge :fire:     |   :pencil2: Note :pencil2:              | 
 |:----------------------------:|:-------------------------------:|:---------------------------------------:|
 |        13/11/2019            |       Ruby-vs-JavaScript.js     |                                         |
 |        14/11/2019            |       Most-Watched-Movies       |        R's solution & mine              |
@@ -22,6 +22,13 @@
 |        18/11/2019            |       JSON                      |                                         |
 |        22/11/2019            |       Array-Challenges.js       |                                         |
 |        20/11/2019            |       Callbacks                 |                                         |
+
+---
+##### In-Class-Practice (Code Along with Canvas Videos)
+
+|:star: Canvas Schedule :star:|     :fire: Video Names :fire:     |   :pencil2: File Name :pencil2:              | 
+|:----------------------------:|:-------------------------------:|:---------------------------------------:|
+| 1121 AJAX, CORS, Promises & Fetch API| Javascript 20 & 21 (27/05/2019)                                                     |promise_exercise_subtractor.js
 
 
 ---
