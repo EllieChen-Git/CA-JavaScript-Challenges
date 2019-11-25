@@ -21,9 +21,7 @@
 |        15/11/2019            |       Classes                   |        To do: Beast Mode++              |
 |        18/11/2019            |       JSON                      |                                         |
 |        22/11/2019            |       Array-Challenges.js       |                                         |
-|        20/11/2019            |       Callbacks                 |To do: Beast Mode &Beast Mode++          |
-
-
+|        20/11/2019            |       Callbacks                 |                                         |
 
 
 ---
