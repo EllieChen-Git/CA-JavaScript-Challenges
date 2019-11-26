@@ -1,12 +1,13 @@
 //[Challenge] 1115 Objects, Prototypes & Classes -  Classes: https://coderacademyedu.github.io/resources/unit_classes.html
 
-
 // Challenge
 // 1.	Create a Dog class. Each dog should have a name and a location.
 class Dog {
     constructor(name, location){
         this.name = name;
         this.location = location;
+        this.walkingRecord = [];
+        this.totalWalks = 0;
     }
 // 2.	Add a speak method that logs "Woof! my name is {name}"
     speak(){
@@ -14,41 +15,44 @@ class Dog {
     }
 // 3.	Add a walk method that accepts two arguments: location (string) and distance (integer)
     walk(location, distance){
-        this.location = location;
-        this.distance = distance;
+        this.walkingRecord.push({ location: location, distance: distance });
+        this.totalWalks += distance;
     }
 // 4.	Add a display_walks method that console.logs all of the dog's walks
     displayWalks(){
-        this.dogsWalks = [];
-        this.dogsWalks[this.location] = this.distance;
-        console.log(this.dogsWalks);
+        console.log(this.walkingRecord);
     }
+
+// 5.	Add a total_distance method that returns the total distance of all the walks
+    totalDistance(){
+        console.log(`I have walked ${this.totalWalks} km`);
+    } 
+
 }
 let dog1 = new Dog("Hunter", "Cabramatta")
-let dog2 = new Dog("Ruben", "Ashfield")
+// let dog2 = new Dog("Ruben", "Ashfield")
 // console.log(dog1);
 // console.log(dog2);
 // console.log(dog1.speak());
-dog1.walk("North Sydney", 15);
 dog1.walk("Burwood", 5);
+dog1.walk("North Sydney", 15);
 dog1.displayWalks();
+dog1.totalDistance();
 // console.log(dog1);
 // console.log(dog2);
 
-
-
-// 5.	Add a total_distance method that returns the total distance of all the walks
 // 6.	Research: what's the difference between console.log and return? Make sure you have a solid understanding
 
 
+// Beast Mode
+// 1.	Create a Walk class with properties: location and distance
+// 2.	Update your Dog class: when the walk method is called, use this new Walk class to create a walk
+// 3.	Introduce a timestamp to each walk, automatically add the current time when you instantiate a walk
 
 
-
-
-
-
-
-
+// Beast Mode++
+// 1.	Create a basic GUI in the browser to interact with your classes. Use buttons, prompts and lists to create and display dogs (view example).
+// 2.	Add walks to the GUI. I.e. add a `New Walk` button to each dog and display their walks under their name.
 
 
 
