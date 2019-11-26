@@ -2,6 +2,19 @@
 [GitHub Link - javascript_methods_collection.md](https://github.com/EllieChen-Git/codewars/blob/master/javascript_methods_collection.md)
 
 ---
+### Date
+
+__.toUTCString()__: converts a date to a string, using the UTC time zone.
+- Also refer here for extra info: https://stackoverflow.com/questions/5416920/timestamp-to-human-readable-format
+```javascript
+const event = new Date('14 Jun 2017 00:00:00 PDT');
+
+console.log(event.toUTCString());
+// expected output: Wed, 14 Jun 2017 07:00:00 GMT
+```
+
+
+---
 ### Number
 
 __.toString__: returns a string representing the specified Number object.

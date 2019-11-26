@@ -1,7 +1,16 @@
 //[Challenge] 1115 Objects, Prototypes & Classes -  Classes: https://coderacademyedu.github.io/resources/unit_classes.html
 
-// Challenge
-// 1.	Create a Dog class. Each dog should have a name and a location.
+// Beast Mode 1. Create a Walk class with properties: location and distance
+class Walk {
+    constructor(location, distance){
+        this.location = location;
+        this.distance = distance;
+// Beast Mode 3. Introduce a timestamp to each walk, automatically add the current time when you instantiate a walk
+        this.timestamp = new Date().toUTCString();
+            }
+}
+
+// Challenge 1. Create a Dog class. Each dog should have a name and a location.
 class Dog {
     constructor(name, location){
         this.name = name;
@@ -9,21 +18,26 @@ class Dog {
         this.walkingRecord = [];
         this.totalWalks = 0;
     }
-// 2.	Add a speak method that logs "Woof! my name is {name}"
+// Challenge 2. Add a speak method that logs "Woof! my name is {name}"
     speak(){
         return `Woof! my name is ${this.name}`;
     }
-// 3.	Add a walk method that accepts two arguments: location (string) and distance (integer)
+// Challenge 3. Add a walk method that accepts two arguments: location (string) and distance (integer)
     walk(location, distance){
-        this.walkingRecord.push({ location: location, distance: distance });
+        // this.walkingRecord.push({ location: location, distance: distance }); //code before class Walk
         this.totalWalks += distance;
+
+        
+// Beast Mode 2. Update your Dog class: when the walk method is called, use this new Walk class to create a walk
+        let walk = new Walk(location, distance);
+        this.walkingRecord.push(walk);
     }
-// 4.	Add a display_walks method that console.logs all of the dog's walks
+// Challenge 4. Add a display_walks method that console.logs all of the dog's walks
     displayWalks(){
         console.log(this.walkingRecord);
     }
 
-// 5.	Add a total_distance method that returns the total distance of all the walks
+// Challenge 5. Add a total_distance method that returns the total distance of all the walks
     totalDistance(){
         console.log(`I have walked ${this.totalWalks} km`);
     } 
@@ -41,18 +55,11 @@ dog1.totalDistance();
 // console.log(dog1);
 // console.log(dog2);
 
-// 6.	Research: what's the difference between console.log and return? Make sure you have a solid understanding
-
-
-// Beast Mode
-// 1.	Create a Walk class with properties: location and distance
-// 2.	Update your Dog class: when the walk method is called, use this new Walk class to create a walk
-// 3.	Introduce a timestamp to each walk, automatically add the current time when you instantiate a walk
-
+// Challenge 6. Research: what's the difference between console.log and return? Make sure you have a solid understanding
 
 // Beast Mode++
-// 1.	Create a basic GUI in the browser to interact with your classes. Use buttons, prompts and lists to create and display dogs (view example).
-// 2.	Add walks to the GUI. I.e. add a `New Walk` button to each dog and display their walks under their name.
+// 1. Create a basic GUI in the browser to interact with your classes. Use buttons, prompts and lists to create and display dogs (view example).
+// 2. Add walks to the GUI. I.e. add a `New Walk` button to each dog and display their walks under their name.
 
 
 
@@ -63,20 +70,20 @@ dog1.totalDistance();
 // Concept: When we're writing code we refer to the things an object has as attributes (name, location) and the things an object does (drink, greet) as methods.
 
 // Warm up: Take a look at the following list, can you identify which are attributes and which are methods?
-// 1.	star_sign
+// 1. star_sign
     // attribute
-// 2.	write_code
+// 2. write_code
     // method
-// 3.	date_of_birth
+// 3. date_of_birth
     // attribute
-// 4.	clothes
+// 4. clothes
     // attribute
 
 
 // Challenge: Build a Cat class.
-// 1.	Each cat should have a name
-// 2.	Implement a speak method to say meow.
-// 3.	Add each cat's name to the speak method (Pixie says meow).
+// 1. Each cat should have a name
+// 2. Implement a speak method to say meow.
+// 3. Add each cat's name to the speak method (Pixie says meow).
     
 class Cat {
     constructor(name){
@@ -137,13 +144,13 @@ pupper.speak
     // console.log(doggo.speak());
     // console.log(pupper.speak());
 
-// 1.	We've got name and age, let's give each dog a location too. Test your location works by printing the dog's location.
+// 1. We've got name and age, let's give each dog a location too. Test your location works by printing the dog's location.
 // doggo = Dog.new('Rover', 2, 'Brisbane')
 // puts doggo.location # -> Brisbane (You might get a no method error, remember attr_accessor?)
 
     // console.log(doggo.location);
 
-// 2.	Create a walk method. This should say "I have been for X walks.". Every time you call walk, the number should increase by one E.g:
+// 2. Create a walk method. This should say "I have been for X walks.". Every time you call walk, the number should increase by one E.g:
 // doggo = Dog.new(...)
 // doggo.walk # -> I have been for 1 walks today
 // doggo.walk # -> I have been for 2 walks today

@@ -7,6 +7,7 @@ Sometime we need random user data in our app. There's an app for that! Random Us
 2.	Open the file in your editor.
 3.	Examine the code. Think about what might happen when you run the file.
 4.	Open the file in your browser to validate your expectations.
+
 5.	With console open, refresh and you should see a response object after a second or two.
 6.	Examine the response object in console, find the property which contains the response JSON.
 7.	Update your console.log to log only the response JSON, not the entire object.

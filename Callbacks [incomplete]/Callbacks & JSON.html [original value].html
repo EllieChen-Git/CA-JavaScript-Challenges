@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!-- saved from url=(0074)https://coderacademyedu.github.io/resources/unit_callbacks_randomuser.html -->
+<html lang="en" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Callbacks &amp; JSON</title>
+  </head>
+  <body cz-shortcut-listen="true">
+    <p>Empty HTML doc :) Some JS is running. Save me to your machine.</p>
+
+    <script>
+      getRandomUser = () => {
+        // This function uses AJAX to hit the random user API.
+        // More info: https://randomuser.me
+
+        var request = new XMLHttpRequest();
+        request.open("GET", "https://randomuser.me/api/", true);
+        request.onload = function() {
+          /* You'll start here */
+          console.log(request);
+        };
+
+        request.send();
+      };
+
+      getRandomUser(); // Execute the function
+    </script>
+  
+
+</body></html>
