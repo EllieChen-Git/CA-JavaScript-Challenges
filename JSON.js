@@ -73,6 +73,9 @@ console.log(append0(sunrise), sunset);
 // Figure out a way to get the current weather from Yahoo! weather in your browser.
 // 1.	Hint 1: Get a brief understanding of CORS (a common interview question)
 // 2.	Hint 2: Get a brief understanding of JSONP (a common interview question)
+Refer here: https://stackoverflow.com/questions/2067472/what-is-jsonp-and-why-was-it-created
+Refer here: https://stackoverflow.com/questions/3839966/can-anyone-explain-what-jsonp-is-in-layman-terms
+
 // 3.	Hint 3: Yahoo! Weather API & Demo: https://developer.yahoo.com/weather/
 // Got it? now use HTML elements to make it look nice!
 
