@@ -19,7 +19,7 @@
 |        21/11/2019            |       Loops-Return.js           |        G's JS review session            |
 |        18/11/2019            | EHFSC_Mo_Ch_(Prototype-vs-Class)|                                         |
 |        15/11/2019            |       Classes                   |        To do: Beast Mode++              |
-|        18/11/2019            |       JSON.js                   |To do: Beast Mode++ (Yahoo! weather API) |
+|        18/11/2019            |       JSON                      |                                         |
 |        22/11/2019            |       Array-Challenges.js       |                                         |
 |        20/11/2019            |       Callbacks                 |To do: Beast Mode &Beast Mode++          |
 

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Yahoo! weather</title>
+
+    <style>
+
+        body {
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            color: #444;
+        }
+
+        .day-container,
+        .day-container * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .day-container{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-flow: row wrap;
+        }
+
+        .day {
+            width: 150px;
+            margin: 10px;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: space-between;
+            text-align: center;
+            border-radius: 20px;
+        }
+
+        .day-name {
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px 20px 0 0;
+            background-color: rgb(255, 234, 182);
+        }
+
+        .day-forecast {
+            background-color: rgb(191, 255, 241);
+        }
+        .day__temp-min {
+            background-color: lightblue;
+        }
+        .day__temp-max {
+            background-color: rgb(255, 184, 155);
+            border-radius: 0 0 20px 20px;
+        }
+
+        .day-forecast,
+        .day__temp-min,
+        .day__temp-max {
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+    <h1>Yahoo! weather</h1>
+
+    <div class="day-container">
+
+        <div class="day">
+            <h2 class="day-name">Monday</h2>
+            <p class="day-forecast">Sunny</p>
+            <p class="day__temp-min">Min 19C</p>
+            <p class="day__temp-max">Max 25C</p>
+        </div>
+
+        <div class="day">
+            <h2 class="day-name">Monday</h2>
+            <p class="day-forecast">Sunny</p>
+            <p class="day__temp-min">Min 19C</p>
+            <p class="day__temp-max">Max 25C</p>
+        </div>
+
+        <div class="day">
+            <h2 class="day-name">Monday</h2>
+            <p class="day-forecast">Sunny</p>
+            <p class="day__temp-min">Min 19C</p>
+            <p class="day__temp-max">Max 25C</p>
+        </div>
+
+        <div class="day">
+            <h2 class="day-name">Monday</h2>
+            <p class="day-forecast">Sunny</p>
+            <p class="day__temp-min">Min 19C</p>
+            <p class="day__temp-max">Max 25C</p>
+        </div>
+
+        <div class="day">
+            <h2 class="day-name">Monday</h2>
+            <p class="day-forecast">Sunny</p>
+            <p class="day__temp-min">Min 19C</p>
+            <p class="day__temp-max">Max 25C</p>
+        </div>
+
+        <div class="day">
+            <h2 class="day-name">Monday</h2>
+            <p class="day-forecast">Sunny</p>
+            <p class="day__temp-min">Min 19C</p>
+            <p class="day__temp-max">Max 25C</p>
+        </div>
+    
+        <div class="day">
+            <h2 class="day-name">Monday</h2>
+            <p class="day-forecast">Sunny</p>
+            <p class="day__temp-min">Min 19C</p>
+            <p class="day__temp-max">Max 25C</p>
+        </div>
+
+        <div class="day">
+            <h2 class="day-name">Monday</h2>
+            <p class="day-forecast">Sunny</p>
+            <p class="day__temp-min">Min 19C</p>
+            <p class="day__temp-max">Max 25C</p>
+        </div>
+
+        <div class="day">
+            <h2 class="day-name">Monday</h2>
+            <p class="day-forecast">Sunny</p>
+            <p class="day__temp-min">Min 19C</p>
+            <p class="day__temp-max">Max 25C</p>
+        </div>
+    
+        <div class="day">
+            <h2 class="day-name">Monday</h2>
+            <p class="day-forecast">Sunny</p>
+            <p class="day__temp-min">Min 19C</p>
+            <p class="day__temp-max">Max 25C</p>
+        </div>
+    
+
+    </div>
+
+    <script>
+                let fahrenheitToCelcius = function(x){
+            return parseFloat(((x - 32) * 5 /9).toFixed(1));
+                }
+            function myFunction(weatherData) {
+                
+                let forecast = weatherData.query.results.channel.item.forecast;
+                for(let i = 0; i < forecast.length; i++){
+                    let days = document.querySelectorAll(".day-name");
+                    days[i].innerHTML = forecast[i].day
+                    console.log(days.innerHTML)
+
+                    let forecasts = document.querySelectorAll(".day-forecast");
+                    forecasts[i].innerHTML = forecast[i].text
+                    console.log(forecasts.innerHTML)
+
+                    let minTemp = document.querySelectorAll(".day__temp-min");
+                    minTemp[i].innerHTML = "Min: " + fahrenheitToCelcius(forecast[i].low);
+                    
+                    console.log(minTemp.innerHTML)
+
+                    let maxTemp = document.querySelectorAll(".day__temp-max");
+                    maxTemp[i].innerHTML = "Max: " + fahrenheitToCelcius(forecast[i].high);
+                    console.log(maxTemp.innerHTML)
+                }
+
+
+            
+            }
+            
+        </script>
+
+    <script src="http://www.mocky.io/v2/5dde54e731000055003ae0cf?callback=myFunction"></script>
+
+
+</body>
+</html>
