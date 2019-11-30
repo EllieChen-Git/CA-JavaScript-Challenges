@@ -22,7 +22,7 @@
 |18/11/2019            |       JSON                      |                                         |
 |22/11/2019            |       Array-Challenges.js       |                                         |
 |20/11/2019            |       Callbacks                 |                                         |
-|21/11/2019 AJAX, CORS, Promises & Fetch API|AJAX        | Solution in a separate repo: https://github.com/EllieChen-Git/Tweeter </br> __To do: Beast Mode(2 & 3) & Beast Mode++__|         
+|21/11/2019 AJAX, CORS, Promises & Fetch API|AJAX        | Also refer to [Tweeter](https://github.com/EllieChen-Git/Tweeter) repo for full solution. </br> __To do: Beast Mode(2 & 3) & Beast Mode++__|         
 |21/11/2019 AJAX, CORS, Promises & Fetch API|Promises    | |                                   
 ---
 ##### Canvas-Videos-Code-Along
