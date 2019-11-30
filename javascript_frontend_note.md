@@ -82,6 +82,10 @@ __.appendChild__
 document.body.appendChild(newDiv);   //append element as a child of body
 ```
 
+__.prepend__
+- The ParentNode.prepend() method inserts a set of Node objects or DOMString objects before the first child of the ParentNode. DOMString objects are inserted as equivalent Text nodes.
+
+
 ---
 __.removeChild__: removes a child node from the DOM and returns the removed node (we can only remove if we know the parent)
 
