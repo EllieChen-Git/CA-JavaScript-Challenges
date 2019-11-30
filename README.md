@@ -18,13 +18,14 @@
 |20/11/2019            |       Arguments                 |                                         |
 |21/11/2019            |       Loops-Return.js           |        G's JS review session            |
 |18/11/2019            | EHFSC_Mo_Ch_(Prototype-vs-Class)|                                         |
-|15/11/2019            |       Classes                   |        To do: Beast Mode++              |
+|15/11/2019            |       Classes                   |        __To do: Beast Mode++__          |
 |18/11/2019            |       JSON                      |                                         |
 |22/11/2019            |       Array-Challenges.js       |                                         |
 |20/11/2019            |       Callbacks                 |                                         |
-|21/11/2019 AJAX, CORS, Promises & Fetch API|AJAX        | Solution in a separate repo: https://github.com/EllieChen-Git/Tweeter </br> To do: Beast Mode(2 & 3) & Beast Mode++|                                      
+|21/11/2019 AJAX, CORS, Promises & Fetch API|AJAX        | Solution in a separate repo: https://github.com/EllieChen-Git/Tweeter </br> __To do: Beast Mode(2 & 3) & Beast Mode++__|         
+|21/11/2019 AJAX, CORS, Promises & Fetch API|Promises    | |                                   
 ---
-##### In-Class-Practice (Code Along with Canvas Videos)
+##### Canvas-Videos-Code-Along
 
 |:star: Canvas Schedule :star:|     :fire: Video Names :fire:     |   :pencil2: File Name :pencil2:              | 
 |:----------------------------:|:-------------------------------:|:---------------------------------------:|
