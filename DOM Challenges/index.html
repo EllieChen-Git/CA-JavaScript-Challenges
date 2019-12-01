@@ -2,6 +2,7 @@
 
 <!-- 22/11/2019 DOM, Node Manipulation & Event Listeners - DOM Challenges -->
 <!-- Instruction: https://coderacademyedu.github.io/resources/unit_dom_and_web_apis.html -->
+
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -9,23 +10,55 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>To-do List</title>
 
-
         <style>
 
         </style>
     </head>
 
     <body>
-        <h1>My To-do List</h1>
+        <h1>My Wonderful To-do List</h1>
+        <h2></h2>
+        <ul></ul>
 
         <form>
-            <!-- <label for ="list">My To-do List</label> -->
-            <input type="textarea" name="list" id="list" />
-            <input type="submit" value="Add Item" />
+            <!-- Challenge 1: Add input box & button 
+                Challenge 5: Change from 'button click' to 'form submission'
+                Challenge 6: Remove submit button. Instead, use enter key to submit form.  
+                    Easiest way: simply add display:none style to submit button.
+                    But can also be achieved by JS or jquery: https://stackoverflow.com/questions/29943/how-to-submit-a-form-when-the-return-key-is-pressed
+            -->
+            <input type="textarea" id="enterTask" />     
+            <input type="submit" style="display:none" value="Create Task" />
         </form>
 
         <script>
+            //Challenge 2: After clicking button, show the new todo task
+            //Challenge 5: Change from 'button click' to 'form submission'
+            document.querySelector("form").addEventListener("submit", (event) => { 
+                event.preventDefault();
+                let inputValue = document.querySelector("#enterTask").value;
+                if (inputValue !== ""){
+                    let newLi = document.createElement("li");
+                    newLi.innerHTML = inputValue;
+                    document.querySelector("ul").append(newLi)
 
+                    //Challenge 3: Reset input field: value can be 'null' or ' '(empty string)
+                    document.getElementById("enterTask").value = null; 
+                    
+                    //Challenge 4: Show the totol number of tasks
+                    let count = document.querySelectorAll("li").length;
+                    let h2 = document.querySelector("h2")
+                    h2.innerHTML = `You now have ${count} task(s) on your list *(^0^)*`;
+                } else { //prevent users from entering empty task
+                    alert("Please enter your task. Your task cannot be blank!");
+                };
+            });
+
+                function submitOnEnter(e) {
+                if (e.which == 13) {
+                document.getElementById("editMeta").submit()
+                }
+                }
         </script>
     </body>
 </html>
