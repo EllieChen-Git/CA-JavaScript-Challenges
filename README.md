@@ -22,12 +22,13 @@
 |18/11/2019</br>Exception Handling, Function Scope & Closures|       JSON   |                      |
 |22/11/2019</br>DOM, Node Manipulation & Event Listeners|Array-Challenges.js|                      |
 |20/11/2019</br>Callbacks, Async vs Sync & The Event Loop|Callbacks|                               |
-|21/11/2019</br>AJAX, CORS, Promises & Fetch API|AJAX        | Also refer to [Tweeter repo](https://github.com/EllieChen-Git/Tweeter) for full solution.</br>__To do: Beast Mode(2 & 3) & Beast Mode++__     |         
+|21/11/2019</br>AJAX, CORS, Promises & Fetch API|AJAX        | Also refer to [Tweeter repo](https://github.com/EllieChen-Git/Tweeter) for full solution.</br>__To do: Beast Mode(2 & 3) & Beast Mode++__          |         
 |21/11/2019</br>AJAX, CORS, Promises & Fetch API|Promises    |                                     |    
-|22/11/2019</br>DOM, Node Manipulation & Event Listeners|DOM Challenges|  __To do: Challenge (6 - Bootstrap), Beast Mode, Beast Mode++__                           |   
-|27/11/2019</br>Promises Review, Async/Await & Web Storage|Landing_Page.html|__To do: Arvo ch, Cookies, Web Storage__</br>We haven't learnt Web Storage. Will leave them at the moment|                          
-|28/11/2019</br> NodeJS Intro|Node||
-
+|22/11/2019</br>DOM, Node Manipulation & Event Listeners|DOM Challenges|  __To do: Challenge (6 - Bootstrap), Beast Mode, Beast Mode++__                                                                         |   
+|27/11/2019</br>Promises Review, Async/Await & Web Storage|Landing_Page.html|__To do: Arvo ch, Cookies, Web Storage__</br>(We haven't learnt Web Storage. Will do this one later.)                             | 
+|28/11/2019 NodeJS Intro|Webpack.js|__To do__(We haven't learnt Webpack. Will do this one later.)  |            
+|28/11/2019 NodeJS Intro|Node-JS-Students|                                                         |
+|28/11/2019 NodeJS Intro|CLI-Tool-Contacts|__To do: Beast Mode, Beast Mode++__                     |
 
 ---
 
