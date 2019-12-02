@@ -26,7 +26,11 @@
 |21/11/2019</br>AJAX, CORS, Promises & Fetch API|Promises    |                                     |    
 |22/11/2019</br>DOM, Node Manipulation & Event Listeners|DOM Challenges|  __To do: Challenge (6 - Bootstrap), Beast Mode, Beast Mode++__                           |   
 |27/11/2019</br>Promises Review, Async/Await & Web Storage|Landing_Page.html|__To do: Arvo ch, Cookies, Web Storage__</br>We haven't learnt Web Storage. Will leave them at the moment|                          
+|28/11/2019</br> NodeJS Intro|Node||
+
+
 ---
+
 ##### Canvas-Videos-Code-Along
 
 |    :star: Canvas Schedule :star:     |       :fire: Videos :fire:      |   :pencil2: File:pencil2:      | 

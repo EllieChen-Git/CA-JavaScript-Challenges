@@ -197,6 +197,29 @@ console.log(de);
 
 ### Array
 
+__Array.from()__: creates a new, shallow-copied Array instance from an array-like or iterable object.
+
+```javascript
+console.log(Array.from('foo'));
+// expected output: Array ["f", "o", "o"]
+
+console.log(Array.from([1, 2, 3], x => x + x));
+// expected output: Array [2, 4, 6]
+```
+
+__.array.forEach__: executes a provided function once for each array element.
+
+```javascript
+const array1 = ['a', 'b', 'c'];
+
+array1.forEach(element => console.log(element));
+
+// expected output: "a"
+// expected output: "b"
+// expected output: "c"
+```
+
+
 __.join__: creates and returns a new string by concatenating all of the elements in an array (or an array-like object), separated by commas or a specified separator string.
 
 ```javascript
