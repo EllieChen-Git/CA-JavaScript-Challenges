@@ -26,6 +26,7 @@
             Gettin' some randoms
           </h2>
           <a class="button is-primary is-inverted is-outlined" id="another-one">Another one!</a>
+          
         </div>
       </div>
     </section>
@@ -64,7 +65,7 @@
     }
 
     async function getRandomUser () {
-
+      console.log(1);
       // If the button is in a `disabled` state, we're waiting for a request to finish.
       // Return so we don't send another request.
       if (anotherOneBtn.hasAttribute('disabled')) {

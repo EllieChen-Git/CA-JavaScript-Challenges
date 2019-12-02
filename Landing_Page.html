@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!-- 1127 Promises Review, Async / Await & Web Storage - Morning Challenge -->
+<!-- Instruction: https://coderacademy.instructure.com/courses/239/pages/promises-review-async-slash-await-and-web-storage?module_item_id=9452 -->
+<html>
+  <head>
+  </head>
+  <body>
+    <h1>Welcome!</h1>
+
+    <div>
+      <img src="https://picsum.photos/600/400?image=0" />
+    </div>
+    
+    <!-- Add a button -->
+    <div>
+        Click here to change the image: <button id="btn">Another image</button>
+    </div>
+    <!-- Add a input box -->
+    <div>
+        Enter any text here to change the header: <input type="textarea" id="inpuxBox"></input>
+    </div>
+    <!-- Add a colour picker -->
+    <div>
+        Select text colour here: <input type="color" id="colourPicker"></input>
+    </div>
+
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin condimentum
+      viverra ipsum eu eleifend. Donec tortor risus, auctor nec ultrices id,
+      cursus vitae orci. Phasellus lacinia vulputate suscipit. In nec elit in
+      justo pretium ultrices. Aliquam convallis maximus nisi. Nunc tempor erat a
+      ultricies bibendum.
+    </p>
+    <!-- Add your controls under here -->
+    <script>
+        // When clicking the button, a new random image pops up.
+        document.querySelector("#btn").addEventListener("click", event => {
+            let image = document.querySelector("img");
+            image.src = `https://picsum.photos/600/400?image=${randNumber()}`;
+
+        })
+
+        //When choosing a new colour, the font colour of the paragraph text changes.
+        document.querySelector("#colourPicker").addEventListener("input", event => {
+            let colour = document.querySelector("input[type=color]").value;
+        //Easier way to change colour
+            let p = document.querySelector("p");
+            p.style.color = colour;
+        //More complex way to change colour on all the <p> tags
+            // document.querySelectorAll("p").forEach((p) => {
+            //     p.style.color = colour;
+            // });
+
+
+        })
+        //When typing, the header text changes accordingly. Rever back to default text if the box is empty.
+        document.querySelector("#inpuxBox").addEventListener("input", event => {
+            let value = document.querySelector("input[type=textarea]").value;
+            let h1 = document.querySelector("h1")
+            if(value !== ""){
+                h1.innerHTML = value;
+            }else{
+                h1.innerHTML = "Welcome!";
+            }
+        })
+
+
+
+      function randNumber() {
+        return Math.floor(Math.random() * 1080);
+      }
+
+      //Add your code under here
+    </script>
+  </body>
+</html>

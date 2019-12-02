@@ -176,3 +176,12 @@ document.querySelector("form").addEventListener("submit", (event) => {
 
 ---
 __document.write()__: will override the whole HTML document.
+
+__How to change a image via JavaScript__
+```javascript
+document.querySelector("#btn").addEventListener("click", event => {
+    let image = document.querySelector("img");
+    image.src = `https://picsum.photos/600/400?image=${randNumber()}`;
+    console.log(image)
+})
+```
