@@ -63,6 +63,14 @@ inquier
         console.log(`Hi ${chalk.green(name)} and your number is ${chalk.yellow(phoneNumber)}`);
     })
 ```
+
+Important Note before Pushing to Github:
+- Remember to create a '.gitignore' in the root folder
+- Place this line into '.gitignore' 
+```
+node_modules
+```
+
 ---
 
 ##### Beast Mode
