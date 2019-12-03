@@ -2,5 +2,4 @@
 
 const myStudents = require("./students.js");
 // console.log(myStudents);
-// console.log(myStudents.students);
-myStudents.students.forEach(x => console.log(x));
+myStudents.forEach(x => console.log(x));

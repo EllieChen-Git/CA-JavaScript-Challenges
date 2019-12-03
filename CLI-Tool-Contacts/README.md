@@ -70,14 +70,23 @@ inquier
 npm install -g nodemon
 nodemon app.js
 
+- Use this command in terminal
 ```
-Ellie 02/12/2019
-Somehow I couldn’t get 'nodemon app.js' to run.
+$ ./node_modules/.bin/nodemon app.js
+```
 
-Error message in terminal: "nodemon: command not found"
+- Alternatively, add this line in package.json and run 'npm run serve' in terminal
+```javacript
+  "scripts": {
+    "serve": "nodemon app.js",
+  },
 ```
 
 2.	Store the contact details in a hash.
+```
+to do
+```
+
 3.	Use Inquirer to display a menu to the user. Allow the user to: add a contact, remove a contact or view all contacts.
 4.	Instead of the app ending each time, take the user back to the menu.
 5.	Add a quit option to the menu.
