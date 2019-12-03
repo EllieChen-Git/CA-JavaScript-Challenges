@@ -1,6 +1,16 @@
 [Challenge] 1128 NodeJS Intro - Arvo Ch - CLI Tool: https://coderacademyedu.github.io/resources/unit_cli_tool.html
 
 ##### Challenge
+---
+
+___Important Note before Pushing to Github:__
+- Remember to create a '.gitignore' file in the same folder
+- Place this line into '.gitignore' 
+```
+node_modules
+```
+---
+
 1.	Create a new project called `contacts`.
 ```
 $ mkdir contacts
@@ -64,12 +74,7 @@ inquier
     })
 ```
 
-Important Note before Pushing to Github:
-- Remember to create a '.gitignore' in the root folder
-- Place this line into '.gitignore' 
-```
-node_modules
-```
+
 
 ---
 

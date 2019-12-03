@@ -29,7 +29,7 @@
 |28/11/2019 NodeJS Intro|Webpack.js|__To do__(We haven't learnt Webpack. Will do this one later.)  |            
 |28/11/2019 NodeJS Intro|Node-JS-Students|                                                         |
 |28/11/2019 NodeJS Intro|CLI-Tool-Contacts|__To do: Beast Mode, Beast Mode++__                     |
-
+|Ed challenge on Canvas |Multiply-Value.js| not able to run code in Ed (setting error?)               |
 ---
 
 ##### Canvas-Videos-Code-Along

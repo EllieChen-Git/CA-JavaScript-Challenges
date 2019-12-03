@@ -54,6 +54,15 @@ console.log(financial('1.23e+5'));
 ---
 ### String
 
+__.repeat__: constructs and returns a new string which contains the specified number of copies of the string on which it was called, concatenated together.
+
+```javascript
+var chorus = 'Because I\'m happy. ';
+
+console.log('Chorus lyrics for "Happy": ' + chorus.repeat(3));
+// expected output: "Chorus lyrics for "Happy": Because I'm happy. Because I'm happy. Because I'm happy."
+```
+
 __.split__: splits a String object into an array of strings by separating the string into substrings, using a specified separator string to determine where to make each split.
 
 ```javascript
