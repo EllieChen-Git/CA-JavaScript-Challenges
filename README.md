@@ -30,7 +30,12 @@
 |28/11/2019 NodeJS Intro|Node-JS-Students|                                                         |
 |28/11/2019 NodeJS Intro|CLI-Tool-Contacts|__To do: Beast Mode, Beast Mode++__                     |
 |Ed challenge on Canvas |Multiply-Value.js| Solved, but not able to run code in Ed (setting error?)|
-|09/12/2019 Express MVC & MongoDB|Express Server| Refer to [express-server-CRUD repo](https://github.com/EllieChen-Git/express-server-CRUD) for full solution.</br>__To do: Show, udpate, delete methods__          |       
+|09/12/2019</br>Express MVC & MongoDB|Express Server| Refer to [express-server-CRUD repo](https://github.com/EllieChen-Git/express-server-CRUD) for full solution.</br>__To do: Show, udpate, delete methods__  | 
+|10/12/2019</br>Document Databases (Normalising vs Denormalising)|Object Destructuring|                |
+
+
+
+
 ---
 
 ##### Canvas-Videos-Code-Along
