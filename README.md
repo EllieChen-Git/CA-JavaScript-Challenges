@@ -33,7 +33,7 @@
 |09/12/2019 Express MVC & MongoDB|Express Server| Refer to [express-server-CRUD repo](https://github.com/EllieChen-Git/express-server-CRUD) for full solution.                                              | 
 |10/12/2019</br>Document Databases (Normalising vs Denormalising)|Object Destructuring|            |
 |Ed challenge on Canvas<br>(W7 JavaScript review) |Smallest-Number.js|                             |
-
+|Ed challenge on Canvas<br>(W7 JavaScript review) |JavaScript Strings Assessment |                 |
 
 
 

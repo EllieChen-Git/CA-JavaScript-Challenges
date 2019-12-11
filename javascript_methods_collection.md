@@ -129,6 +129,11 @@ console.log(str.substring(2));
 // expected output: "zilla"
 ```
 
+__.replace__: returns a new string with some or all matches of a pattern replaced by a replacement. The pattern can be a string or a RegExp, and the replacement can be a string or a function to be called for each match. If pattern is a string, only the first occurrence will be replaced.
+- Syntax: str.replace(regexp|substr, newSubstr|function)
+```
+var s = a.replace(b, '')
+```
 __.slice__: extracts a section of a string and returns it as a new string, without modifying the original string.
 - ##### beginIndex
 The zero-based index at which to begin extraction. If negative, it is treated as strLength + beginIndex where strLength is the length of the string (for example, if beginIndex is -3 it is treated as strLength - 3). If beginIndex is greater than or equal to the length of the string, slice() returns an empty string.
@@ -268,16 +273,20 @@ console.log(found);
 // expected output: 12
 ```
 
-__.findIndex()__: returns the index of the first element in the array that satisfies the provided testing function. Otherwise, it returns -1, indicating no element passed the test.
+__.findIndex()__: takes a callback function, and returns the index of the first element in the array that satisfies the provided testing function. Otherwise, it returns -1, indicating no element passed the test.
 ```javascript
-const array1 = [5, 12, 8, 130, 44];
-
-const isLargeNumber = (element) => element > 13;
-
-console.log(array1.findIndex(isLargeNumber));
-// expected output: 3
+const fruits = ["apple", "banana", "cantaloupe", "blueberries", "grapefruit"];
+const index = fruits.findIndex(fruit => fruit === "blueberries");
+console.log(index); // 3
+console.log(fruits[index]); // blueberries
 ```
 
+__.lastIndexOf__: takes an argument, and returns the last index at which a given element can be found in the array, or -1 if it is not present. The array is searched backwards, starting at fromIndex.
+```javascript
+var numbers = [2, 5, 9, 2];
+numbers.lastIndexOf(2);     // 3
+numbers.lastIndexOf(7);     // -1
+```
 __.filter__: creates a new array with __all elements that pass the test__ implemented by the provided function.
     array.filter(Boolean) => filter all the "true" elements
     https://devdocs.io/javascript/global_objects/array/filter
