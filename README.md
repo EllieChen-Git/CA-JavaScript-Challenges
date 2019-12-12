@@ -34,7 +34,7 @@
 |10/12/2019</br>Document Databases (Normalising vs Denormalising)|Object Destructuring|            |
 |Ed challenge on Canvas<br>(W7 JavaScript review) |Smallest-Number.js|                             |
 |Ed challenge on Canvas<br>(W7 JavaScript review) |JavaScript Strings Assessment |                 |
-
+|12/12/2019<br>Express Middleware Deep Dive|1212_Mo_Ch.js|||
 
 
 ---

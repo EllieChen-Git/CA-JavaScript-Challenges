@@ -618,6 +618,17 @@ lunch = JSON.parse(lunchJson);
 //{ food: 'Pork Bun Roll', price: 10 };
 ```
 
+##### How to make a deep copy
+```javascript
+let a = ["ants"];
+let b = JSON.parse(JSON.stringify(a)); //how to make a deep copy
+// let b = [...a] //shallow copy by 'speard operator'. shallow copy only copies the first level, not the deeper level
+b.push("in my pants");
+console.log(a);
+// return [ 'ants' ]
+console.log(b);
+// return [ 'ants', 'in my pants' ]
+```
 ---
 
 ### JS Concept
