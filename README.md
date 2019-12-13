@@ -1,7 +1,7 @@
-# In-Class-JavaScript-Challenges
+# CA-JavaScript-Challenges
 
 ---
-:whale: Stores all the in-class JavaScript challenges here. :whale: 
+:whale: Stores all my CA JavaScript challenge solutions here. :whale: 
 
 ---
 ##### Challenges List
@@ -18,33 +18,33 @@
 |20/11/2019</br>Callbacks, Async vs Sync & The Event Loop|Arguments|                               |
 |21/11/2019            |       Loops-Return.js           |        G's JS review session            |
 |18/11/2019</br>Exception Handling, Function Scope & Closures| Prototype-vs-Class.js|              |
-|15/11/2019            |       Classes                   |        __To do: Beast Mode++__          |
+|15/11/2019            |       Classes                   |        To do: Beast Mode++              |
 |18/11/2019</br>Exception Handling, Function Scope & Closures|       JSON   |                      |
 |22/11/2019</br>DOM, Node Manipulation & Event Listeners|Array-Challenges.js|                      |
 |20/11/2019</br>Callbacks, Async vs Sync & The Event Loop|Callbacks|                               |
-|21/11/2019</br>AJAX, CORS, Promises & Fetch API|AJAX        | Refer to [Tweeter repo](https://github.com/EllieChen-Git/Tweeter) for full solution.</br>__To do: Beast Mode(2 & 3) & Beast Mode++__          |         
+|21/11/2019</br>AJAX, CORS, Promises & Fetch API|AJAX        |__Full solution in [Tweeter repo](https://github.com/EllieChen-Git/Tweeter).__</br>To do: Beast Mode(2 & 3) & Beast Mode++                              |         
 |21/11/2019</br>AJAX, CORS, Promises & Fetch API|Promises    |                                     |    
-|22/11/2019</br>DOM, Node Manipulation & Event Listeners|DOM Challenges|  __To do: Challenge (6 - Bootstrap), Beast Mode, Beast Mode++__                                                                         |   
-|27/11/2019</br>Promises Review, Async/Await & Web Storage|Landing_Page.html|__To do: Arvo ch, Cookies, Web Storage__</br>(We haven't learnt Web Storage. Will do this one later.)                             | 
-|28/11/2019 NodeJS Intro|Webpack.js|__To do__(We haven't learnt Webpack. Will do this one later.)  |            
+|22/11/2019</br>DOM, Node Manipulation & Event Listeners|DOM Challenges|To do: Challenge (6 - Bootstrap), Beast Mode, Beast Mode++                                                                                 |   
+|27/11/2019</br>Promises Review, Async/Await & Web Storage|Landing_Page.html|To do: Arvo Ch, Cookies, Web Storage| 
 |28/11/2019 NodeJS Intro|Node-JS-Students|                                                         |
-|28/11/2019 NodeJS Intro|CLI-Tool-Contacts|__To do: Beast Mode, Beast Mode++__                     |
-|Ed challenge on Canvas |Multiply-Value.js| Solved, but not able to run code in Ed (setting error?)|
-|09/12/2019 Express MVC & MongoDB|Express Server| Refer to [Express-Tweet repo](https://github.com/EllieChen-Git/Express-Tweet) for full solution.| 
+|28/11/2019 NodeJS Intro|CLI-Tool-Contacts|To do: Beast Mode, Beast Mode++                         |
+|Ed challenge on Canvas |Multiply-Value.js|                                                        |
+|09/12/2019 Express MVC & MongoDB|Express Server|__Solution in [Express-Tweet repo](https://github.com/EllieChen-Git/Express-Tweet).__                                                                    | 
 |10/12/2019</br>Document Databases (Normalising vs Denormalising)|Object Destructuring|            |
 |Ed challenge on Canvas<br>(W7 JavaScript review) |Smallest-Number.js|                             |
 |Ed challenge on Canvas<br>(W7 JavaScript review) |JavaScript Strings Assessment |                 |
+|12/12/2019<br>Express Middleware Deep Dive|Tracking API|__Solution in [Kahoot-Tracker repo](https://github.com/EllieChen-Git/Kahoot-Tracker).__                                                                   |
 |12/12/2019<br>Express Middleware Deep Dive|20191212-Spread-Operator.js|                           |
 |13/12/2019 Jest & BDD|20191213-12-Days-of-Christmas.js|                                           |
 
-
+<!-- |28/11/2019 NodeJS Intro|Webpack.js|__To do__(We haven't learnt Webpack. Will do this one later.)  |             -->
 ---
 
 ##### Canvas-Videos-Code-Along
 
 |    :star: Canvas Schedule :star:     |       :fire: Videos :fire:      |   :pencil2: File:pencil2:      | 
 |:------------------------------------:|:-------------------------------:|:------------------------------:|
-| 21/11/2019 AJAX, CORS, Promises & Fetch API| Javascript 20 & 21 (27/05/2019) | promise_exercise_subtractor.js |
+| 21/11/2019 AJAX, CORS, Promises & Fetch API| JavaScript 20 & 21 (27/05/2019) | promise_exercise_subtractor.js |
 
 
 ---
