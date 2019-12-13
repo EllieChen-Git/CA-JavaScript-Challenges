@@ -30,11 +30,12 @@
 |28/11/2019 NodeJS Intro|Node-JS-Students|                                                         |
 |28/11/2019 NodeJS Intro|CLI-Tool-Contacts|__To do: Beast Mode, Beast Mode++__                     |
 |Ed challenge on Canvas |Multiply-Value.js| Solved, but not able to run code in Ed (setting error?)|
-|09/12/2019 Express MVC & MongoDB|Express Server| Refer to [express-server-CRUD repo](https://github.com/EllieChen-Git/express-server-CRUD) for full solution.                                              | 
+|09/12/2019 Express MVC & MongoDB|Express Server| Refer to [Express-Tweet repo](https://github.com/EllieChen-Git/Express-Tweet) for full solution.| 
 |10/12/2019</br>Document Databases (Normalising vs Denormalising)|Object Destructuring|            |
 |Ed challenge on Canvas<br>(W7 JavaScript review) |Smallest-Number.js|                             |
 |Ed challenge on Canvas<br>(W7 JavaScript review) |JavaScript Strings Assessment |                 |
-|12/12/2019<br>Express Middleware Deep Dive|1212_Mo_Ch.js|||
+|12/12/2019<br>Express Middleware Deep Dive|20191212-Spread-Operator.js|                           |
+|13/12/2019 Jest & BDD|20191213-12-Days-of-Christmas.js|                                           |
 
 
 ---
