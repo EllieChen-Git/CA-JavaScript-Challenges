@@ -191,7 +191,7 @@ let word = firstChar + rest;
 __.parseInt()__: parses a string argument and returns an integer of the specified radix (the base in mathematical numeral systems).
 
 
-__.match__: retrieves the matches when matching a string against a regular expression.
+__.match__: retrieves the matches when matching a string against a regular expression (will return an array).
 
 ```javascript
 let Boulevards = [ "Boulevard de la Madeleine", "Boulevard de Magenta", "Boulevard Marguerite-de-Rochechouart", "Boulevard Montmartre", "Boulevard du Montparnasse", "Boulevard la Madeleine"];
@@ -496,6 +496,19 @@ console.log(Employee.firstname);
 
 ```
 
+__.Object.values()__: returns an array of a given object's own enumerable property values, in the same order as that provided by a for...in loop (the difference being that a for-in loop enumerates properties in the prototype chain as well).
+
+```javascript
+const object1 = {
+  a: 'somestring',
+  b: 42,
+  c: false
+};
+
+console.log(Object.values(object1));
+// expected output: Array ["somestring", 42, false]
+```
+
 ---
 
 ### Values
@@ -629,6 +642,19 @@ console.log(a);
 console.log(b);
 // return [ 'ants', 'in my pants' ]
 ```
+
+---
+
+### Regex
+- Vowels: /[aeiou]/
+- 'g': means global search
+- 'i': means case-insensitive
+
+```javascript
+  let vowels = x.match(/[aeiou]/gi) || [];
+```
+
+
 ---
 
 ### JS Concept
