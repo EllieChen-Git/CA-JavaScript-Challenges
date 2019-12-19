@@ -38,9 +38,9 @@
 |13/12/2019 Jest & BDD|20191213-12-Days-of-Christmas.js|                                           |
 |16/12/2019<br>Express Cookies, Sessions & Authentication|20191216-Template-Literals.js|           |
 |17/12/2019 Passport, JWT & OAuth|20191217-Object-Destructuring.js|                                |
-|18/12/2019|20191218_Bruce_JS_recap|           |                                                   |
-|19/12/2019 React & JSX Intro|20191219-Vowels-Count.js|           |                                 |
-
+|18/12/2019|20191218_Bruce_JS_recap|           |  file in source_code_lesson                       |
+|19/12/2019 React & JSX Intro|20191219-Vowels-Count.js|           |                                |
+|20/12/2019<br>JSX Deep Dive & Conditional Rendering|20191220-Sum-If-Possible.js|           |                                |
 <!-- |28/11/2019 NodeJS Intro|Webpack.js|__To do__(We haven't learnt Webpack. Will do this one later.)  |             -->
 ---
 
