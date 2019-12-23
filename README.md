@@ -45,6 +45,8 @@
 |         20/12/2019<br>JSX Deep Dive & Conditional Rendering         |   20191220-Sum-If-Possible.js    |                                                                                                                            |  |
 |             Class Components, State & Lifecycle Methods             |        Sort-By-String.js         |                                                                                                                            |
 | Uncontrolled vs Controlled Elements, 'this' Keyword & Lifting State |         Shopping-Time.js         |                                                                                                                            |
+|                   Single Page Apps & React Router                   |        Build-Stairway.js         |                                                                                                                            |
+|                     Connecting React & Express                      |       Positive-Dominant.js       |                                                                                                                            |
 
 <!--                               |     28/11/2019 NodeJS Intro      |                                                         Webpack.js                                                         | **To do**(We haven't learnt Webpack. Will do this one later.) | -->
 

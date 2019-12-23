@@ -426,6 +426,27 @@ items.sort(function(a, b) {
 });
 ```
 
+**How to return unique elements in array**
+
+Ref: https://stackoverflow.com/questions/1960473/get-all-unique-values-in-a-javascript-array-remove-duplicates
+
+**Set**: object lets you store unique values of any type, whether primitive values or object references.
+https://devdocs.io/javascript/global_objects/set
+
+```javascript
+//Using 'Set' & 'Spread' operator
+let unique = [...new Set(array)];
+return unique;
+
+//Using ES6 Syntax: filter & indexOf
+
+let listTwo = list.filter(
+  (item, index, arrayRef) => arrayRef.indexOf(index) == item
+);
+
+//array reference (in this case "list")
+```
+
 **How to count elements in array (1)**
 
 ```javascript
