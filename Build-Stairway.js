@@ -22,23 +22,13 @@ const type3 = "A";
 // Write function here
 
 function buildStairway(height, type) {
-  let arr = [];
   if (height <= 0) {
     return [];
   } else {
-    for (let i = 0; i < height; i++) {
-      arr.push(type);
+    for (let i = 1; i <= height; i++) {
+      let stairs = [...(type.repeat(i) + "_".repeat(height - i))];
+      console.log(stairs);
     }
-    // for (let j = 0; j < arr.length; j++) {
-
-    //   console.log(newArr);
-    // }
-    let newArr = arr;
-    newArr[newArr.length - 1] = "_";
-
-    return `
-    ${newArr}
-    ${arr}`;
   }
 }
 
@@ -54,10 +44,10 @@ console.log(buildStairway(height1, type1));
 // ["*", "*", "*", "*", "-"],
 // ["*", "*", "*", "*", "*"];
 
-// console.log(buildStairway(height2, type2));
+console.log(buildStairway(height2, type2));
 // [];
 
-// console.log(buildStairway(height3, type3));
+console.log(buildStairway(height3, type3));
 // []
 
 // Methods:
