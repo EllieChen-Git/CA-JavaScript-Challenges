@@ -21,6 +21,17 @@ console.log(event.toUTCString());
 
 **.toString**: returns a string representing the specified Number object.
 
+**(numObj).toString([radix])** (how to convert number to different bases): radix => An integer in the range 2 through 36 specifying the base to use for representing numeric values.
+
+```javascript
+1234.toString(2) // binary: '10011010010'
+
+1234.toString(16) // hex: '4d2'
+
+1234.toString(10) // decimal: '1234'
+
+```
+
 **how to convert a number to its corresponding letter**
 
 ```javascript
@@ -34,6 +45,18 @@ console.log(event.toUTCString());
 > String.fromCharCode(122);
 'z'
 
+```
+
+**how to convert a letter to its corresponding number**
+
+```javascript
+// we count from zero
+"a".charCodeAt(0) - 97; //index '0' means it's a single character
+//0
+"b".charCodeAt(0) - 97;
+//1
+"z".charCodeAt(0) - 97;
+//25
 ```
 
 **.parseFloat**: parses an argument and returns a floating point number.
@@ -57,6 +80,10 @@ console.log(financial("1.23e+5"));
 ---
 
 ### String
+
+**Generating the alphabet in JavaScript**
+
+- https://codegolf.stackexchange.com/questions/71613/generating-the-alphabet-in-javascript
 
 **.repeat**: constructs and returns a new string which contains the specified number of copies of the string on which it was called, concatenated together.
 
@@ -103,18 +130,6 @@ console.log(greeting);
 
 console.log(greeting.trim());
 // expected output: "Hello world!";
-```
-
-**how to convert a letter to its corresponding number**
-
-```javascript
-// we count from zero
-"a".charCodeAt(0) - 97; //index '0' means it's a single character
-//0
-"b".charCodeAt(0) - 97;
-//1
-"z".charCodeAt(0) - 97;
-//25
 ```
 
 **.toUpperCase**: returns the calling string value converted to uppercase (the value will be converted to a string if it isn't one).
@@ -187,6 +202,12 @@ let append0 = function(y){
 append0("7:5 AM"); // return '7:50 AM'
 ```
 
+##### How to reverse a word
+
+- Use .split("") to separeate all characters into an array
+- Then use .reverse() to rever the order of teh array
+- Lastly, use .join(" ") to join back the word
+
 ##### How to capitalise a word
 
 ```javascript
@@ -226,6 +247,61 @@ console.log(de);
 ---
 
 ### Array
+
+**How to create a new array from an array or a string**
+
+- **Spread syntax** allows an iterable such as an array expression or string to be expanded in places where zero or more arguments (for function calls) or elements (for array literals) are expected, or an object expression to be expanded in places where zero or more key-value pairs (for object literals) are expected.
+
+```javascript
+let a = [1, 2, 2, 3, 3]
+[...a] // expected: [ 1, 2, 2, 3, 3 ]
+
+let b = "AAAABBBCCDAABBB"
+[...b] //expected: [ 'A', 'A', 'A', 'A', 'B', 'B', 'B', 'C', 'C', 'D', 'A', 'A', 'B', 'B', 'B' ]
+
+
+```
+
+**slice()**: returns a shallow copy of a portion of an array into a new array object selected from begin to end (end not included). The original array will not be modified.
+
+```javascript
+const animals = ["ant", "bison", "camel", "duck", "elephant"];
+
+console.log(animals.slice(2));
+// expected output: Array ["camel", "duck", "elephant"]
+
+console.log(animals.slice(2, 4));
+// expected output: Array ["camel", "duck"]
+
+console.log(animals.slice(1, 5));
+// expected output: Array ["bison", "camel", "duck", "elephant"]
+```
+
+**.splice()**: changes the contents of an array by removing existing elements and/or adding new elements.
+
+```javascript
+// Remove 1 element from index 3
+var myFish = ["angel", "clown", "drum", "mandarin", "sturgeon"];
+var removed = myFish.splice(3, 1);
+// removed is ["mandarin"]
+// myFish is ["angel", "clown", "drum", "sturgeon"]
+
+// Remove 0 (zero) elements from index 2, and insert "drum"
+var myFish = ["angel", "clown", "mandarin", "sturgeon"];
+var removed = myFish.splice(2, 0, "drum");
+// myFish is ["angel", "clown", "drum", "mandarin", "sturgeon"]
+// removed is [], no elements removed
+
+//Remove 2 elements from index 0, and insert "parrot", "anemone" and "blue"
+var myFish = ["angel", "clown", "trumpet", "sturgeon"];
+var removed = myFish.splice(0, 2, "parrot", "anemone", "blue");
+// myFish is ["parrot", "anemone", "blue", "trumpet", "sturgeon"]
+// removed is ["angel", "clown"]
+```
+
+**How to remove an element from**: https://love2dev.com/blog/javascript-remove-from-array/
+
+- **Array.splice()**: If you know the value you want to remove from an array you can use the splice method. First you must identify the index of the target item. You then use the index as the start element and remove just one element.
 
 **Array.from()**: creates a new, shallow-copied Array instance from an array-like or iterable object.
 
@@ -354,28 +430,6 @@ const pets = ["cat", "dog", "bat"];
 
 console.log(pets.includes("at"));
 // expected output: false
-```
-
-**.splice()**: changes the contents of an array by removing existing elements and/or adding new elements.
-
-```javascript
-// Remove 1 element from index 3
-var myFish = ["angel", "clown", "drum", "mandarin", "sturgeon"];
-var removed = myFish.splice(3, 1);
-// removed is ["mandarin"]
-// myFish is ["angel", "clown", "drum", "sturgeon"]
-
-// Remove 0 (zero) elements from index 2, and insert "drum"
-var myFish = ["angel", "clown", "mandarin", "sturgeon"];
-var removed = myFish.splice(2, 0, "drum");
-// myFish is ["angel", "clown", "drum", "mandarin", "sturgeon"]
-// removed is [], no elements removed
-
-//Remove 2 elements from index 0, and insert "parrot", "anemone" and "blue"
-var myFish = ["angel", "clown", "trumpet", "sturgeon"];
-var removed = myFish.splice(0, 2, "parrot", "anemone", "blue");
-// myFish is ["parrot", "anemone", "blue", "trumpet", "sturgeon"]
-// removed is ["angel", "clown"]
 ```
 
 **.sort**: sorts the elements of an array in place and returns the array.
@@ -725,12 +779,40 @@ console.log(b);
 
 ### Regex
 
+Ref: https://www.ntu.edu.sg/home/ehchua/programming/howto/Regexe.html
+Ref: https://regexr.com/
+
 - Vowels: /[aeiou]/
 - 'g': means global search
 - 'i': means case-insensitive
+- '\d': match any one digit Digits are [0-9]
+- '\w': means ANY ONE word character. For ASCII, word characters are [a-zA-Z0-9_]
+- {5,}: means 5 or more
+- '/\w{5,}/': a word with 5 or more characters
+- |: or
+- '-'(dash): denotes range
+
+- . (dot): ANY ONE character except line breaks.
+- \* (Quantifier): Match 0 or more of the preceding token.
+- (._): same as ._ but will add that to a capture group.
+- \$1, \$2: retrieve the back references in sequential order. values of captured groups by index. \$1 is a first - captured group, and \$2 is a second captured group.
+- [...]: ANY ONE of the character, e.g., [aeiou] matches "a", "e", "i", "o" or "u".
 
 ```javascript
-let vowels = x.match(/[aeiou]/gi) || [];
+let vowels = x.match(/[aeiou]/gi);
+
+a.match(/\d/); // (/\d/): match any one digit Digits are [0-9]
+
+string.replace(/\w{5,}/g, function(w))
+  // (\w): means ANY ONE word character. For ASCII, word characters are [a-zA-Z0-9_]
+  // {5,}: means 5 or more
+
+.replace(/(.*),(.*)$/, "$1 &$2"); //replace the last comma with '&'
+
+const arr = str.replace(/_|-/g, " ").split(" "); //replace all '-' or '_' with a space
+const arr = str.replace(/[_-]/g, " ").split(" "); //replace all '-' or '_' with a space
+
+.replace(/[W-Z]/g, 9); // replace W, X, Y, Z (anyone[], dash range) with 9
 ```
 
 ---
