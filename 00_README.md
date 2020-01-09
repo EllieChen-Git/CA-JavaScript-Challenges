@@ -47,7 +47,7 @@
 | Uncontrolled vs Controlled Elements, 'this' Keyword & Lifting State |    20200107-Shopping-Time.js     |                                                                                                                            |
 |                   Single Page Apps & React Router                   |    20200108-Build-Stairway.js    |                                                                                                                            |
 |                     Connecting React & Express                      |  20200109-Positive-Dominant.js   |                                                                                                                            |
-|                             Redux Intro                             |     Phone-Number-Decoder.js      |                                                                                                                            |
+|                             Redux Intro                             |  20200110-Phone-Number-Decoder   |                                                   Added Mark's solution                                                    |
 |                                                                     |                                  |                                                                                                                            |
 |                                                                     |                                  |                                                                                                                            |
 |                                                                     |                                  |                                                                                                                            |
@@ -69,3 +69,4 @@
 - template.js: template file for JavaScript challenges
 - javascript_methods_collection.md: stores all JavaScript backend functions
 - javascript_frontend_note: stores JavaScript frontend methods
+- Individual-Morning-Challenges: Store all the individual morning challenges in single .js files
