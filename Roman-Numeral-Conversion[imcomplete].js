@@ -40,18 +40,17 @@ const romanNumerals = input => {
   };
 
   if (typeof input === "string") {
-    let number = 0;
     for (let i in roman) {
+      let number = 0;
       // while (input !== i) {
-      if (input.match(i)) {
+      while (input.includes(i)) {
         number += roman[i];
         input = input.replace(i, "");
         console.log(i);
         console.log(number);
-        console.log(input);
+        // console.log(input);
       }
-      // }
-      // return number;
+      return number;
     }
   } else {
     let string = "";

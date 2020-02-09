@@ -59,7 +59,6 @@ console.log(event.toUTCString());
 //25
 ```
 
-**.parseFloat**: parses an argument and returns a floating point number.
 **.toFixed()**: formats a number using fixed-point notation.
 
 ```javascript
@@ -80,6 +79,10 @@ console.log(financial("1.23e+5"));
 ---
 
 ### String
+
+**.parseFloat**: parses an argument and returns a floating point number.
+
+**.parseInt()**: parses a string argument and returns an integer of the specified radix (the base in mathematical numeral systems).
 
 **Generating the alphabet in JavaScript**
 
@@ -219,8 +222,6 @@ let rest = i.substring(1).toLowerCase();
 let word = firstChar + rest;
 ```
 
-**.parseInt()**: parses a string argument and returns an integer of the specified radix (the base in mathematical numeral systems).
-
 **.match**: retrieves the matches when matching a string against a regular expression (will return an array).
 
 ```javascript
@@ -247,6 +248,10 @@ console.log(de);
 ---
 
 ### Array
+
+**You can access element in array with negative index in JavaScript**: https://medium.com/uncaught-exception/javascript-array-negative-index-using-proxies-ed096dc84416
+
+- The way to work around is to use 'array[array.length -1]', instead of 'array[-1]'
 
 **How to create a new array from an array or a string**
 
@@ -540,7 +545,7 @@ const data = [
 ];
 
 //[Solution 1]
-var countData = data.reduce(function(allData, element) {
+var countData = data.reduce((allData, element) => {
   if (element in allData) {
     allData[element]++;
   } else {
@@ -589,7 +594,9 @@ let sum = array.reduce((a, b) => a + b);
 **.some()**: tests whether at least one element in the array passes the test implemented by the provided function.
 
 - Note: This method returns false for any condition put on an empty array.
-  **.every()**: method tests whether all elements in the array pass the test implemented by the provided function.
+
+**.every()**: method tests whether all elements in the array pass the test implemented by the provided function.
+
 - Note: This method returns true for any condition put on an empty array.
 
 ```javascript
@@ -605,13 +612,50 @@ console.log(olderThan19); //true
 
 let everyoneOlderThan19 = peopleTwo.every(i => 2019 - i.year > 19);
 console.log(everyoneOlderThan19); //false
+
+//Check if two arrays share common elements
+const answer = arrOne.every(x => arrTwo.includes(x));
 ```
 
 ---
 
 ### Object
 
-**.delete** : removes a property from an object; if no more references to the same property are held, it is eventually released automatically.
+**.Object.keys()**: returns an array of a given object's own property names, in the same order as we get with a normal loop.
+
+```javascript
+const object1 = {
+  a: "somestring",
+  b: 42,
+  c: false
+};
+
+console.log(Object.keys(object1));
+// expected output: Array ["a", "b", "c"]
+```
+
+**.Object.values()**: returns an array of a given object's own enumerable property values, in the same order as that provided by a for...in loop (the difference being that a for-in loop enumerates properties in the prototype chain as well).
+
+```javascript
+const object1 = {
+  a: "somestring",
+  b: 42,
+  c: false
+};
+
+console.log(Object.values(object1));
+// expected output: Array ["somestring", 42, false]
+```
+
+**How to find a key by its value**:
+
+```javascript
+obj = { "21": 2, "24": 1, "46": 3, "56": 3, "75": 3, "96": 3 };
+
+const x = Object.keys(obj).find(key => obj[key] === 1);
+```
+
+**.delete**: removes a property from an object; if no more references to the same property are held, it is eventually released automatically.
 
 ```javascript
 var Employee = {
@@ -626,19 +670,6 @@ delete Employee.firstname;
 
 console.log(Employee.firstname);
 // expected output: undefined
-```
-
-**.Object.values()**: returns an array of a given object's own enumerable property values, in the same order as that provided by a for...in loop (the difference being that a for-in loop enumerates properties in the prototype chain as well).
-
-```javascript
-const object1 = {
-  a: "somestring",
-  b: 42,
-  c: false
-};
-
-console.log(Object.values(object1));
-// expected output: Array ["somestring", 42, false]
 ```
 
 ---
