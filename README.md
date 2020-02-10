@@ -49,7 +49,7 @@
 |                     Connecting React & Express                      |  20200109-Positive-Dominant.js   |                                                                                                                            |
 |                             Redux Intro                             |  20200110-Phone-Number-Decoder   |                                                   Added Mark's solution                                                    |
 |                        Alex B's Ed Challenge                        |         Digital_Root.js          |                                                                                                                            |  |
-|                                                                     |                                  |                                                                                                                            |
+|                        Alex B's Ed Challenge                        |       Maximum_Cocktails.js       |                                                                                                                            |
 |                                                                     |                                  |                                                                                                                            |
 |                                                                     |                                  |                                                                                                                            |
 |                                                                     |                                  |                                                                                                                            |
@@ -69,4 +69,4 @@
 - template.js: template file for JavaScript challenges
 - javascript_methods_collection.md: stores all JavaScript backend functions
 - javascript_frontend_note: stores JavaScript frontend methods
-- Individual-Morning-Challenges: Store all the individual morning challenges in single .js files
+- Individual-Challenges: Store all the individual morning challenges in single .js files
